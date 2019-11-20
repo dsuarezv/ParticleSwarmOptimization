@@ -3,18 +3,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dyquo.Optimization.UI"
-        xmlns:Charts3d="clr-namespace:Dyquo.Charts3d;assembly=Dyquo.Charts3d"
+        xmlns:charts3d="clr-namespace:Dyquo.Charts3d;assembly=Dyquo.Charts3d"
         x:Class="Dyquo.Optimization.UI.MainWindow"
         mc:Ignorable="d"
         Title="Optimizer" Height="720" Width="1024">
     <Grid>
 
-        <Charts3d:Chart3d x:Name="Show3d"/>
+        <charts3d:Chart3d x:Name="Show3d"/>
 
         <Grid Height="98" VerticalAlignment="Top" Margin="0,0,0,0">
-            <Button x:Name="RunButton" Content="Run" Margin="9,12,0,0" VerticalAlignment="Top" Click="button_Click" Height="68" HorizontalAlignment="Left" Width="73" FontSize="26" Background="{x:Null}" BorderBrush="#FFC7AFAF"/>
+            <Button x:Name="RunButton" Content="Run" Margin="9,12,0,0" VerticalAlignment="Top" 
+                    Command="{Binding RunCommand}"
+                    Height="68" HorizontalAlignment="Left" Width="73" FontSize="26" Background="{x:Null}" BorderBrush="#FFC7AFAF"/>
 
-            <Label x:Name="StatusLabel" Content="Solver idle." HorizontalAlignment="Left" Margin="92,-1,0,0" VerticalAlignment="Top" Width="426" FontSize="26"/>
+            <Label x:Name="StatusLabel" Content="{Binding Status.Value}" HorizontalAlignment="Left" Margin="92,-1,0,0" VerticalAlignment="Top" Width="426" FontSize="26">
+                <Label.ContentStringFormat>
+                    Solver {0}
+                </Label.ContentStringFormat>
+            </Label>
             <Label Content="Goal is to find absolute minimum of the function." HorizontalAlignment="Left" Margin="94,36,0,0" VerticalAlignment="Top" Width="337"/>
             <Label x:Name="CycleInfoLabel" Content="" HorizontalAlignment="Left" Margin="94,56,0,0" VerticalAlignment="Top" Width="337"/>
 

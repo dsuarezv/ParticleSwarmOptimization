@@ -1,5 +1,5 @@
 ﻿using Dyquo.Charts3d;
-using Dyquo.Optimization.Swarm;
+using Dyqui.PSO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace Dyquo.Optimization.UI
 {
     public class ParticlesViewModel
     {
-        public Model3DGroup SetupParticles(PSOSolverData data)
+        public Model3DGroup SetupParticles(SolverData data)
         {
             mParticleModels.Clear();
 
