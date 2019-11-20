@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dyquo.Optimization.Swarm", "dyquo.optimization.swarm\Dyquo.Optimization.Swarm.csproj", "{01632468-842A-42EB-8CDB-31CC24E50E44}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dyquo.Optimization.UI", "Dyquo.Optimization.UI\Dyquo.Optimization.UI.csproj", "{6CE81BB5-2537-4E02-BF6E-6DD4F248A7E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dyquo.Charts3d", "Dyquo.Charts3d\Dyquo.Charts3d.csproj", "{BBF1973F-289C-418B-B5E1-2251F77A4BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dyqui.ConsoleDemo", "Dyqui.ConsoleDemo\Dyqui.ConsoleDemo.csproj", "{B4464574-473B-41B3-A86B-7A7B5550AE6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dyquo.PSO", "Dyquo.PSO\Dyquo.PSO.csproj", "{1D7AA1AC-B358-4906-A36F-9007831CB7C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01632468-842A-42EB-8CDB-31CC24E50E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01632468-842A-42EB-8CDB-31CC24E50E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01632468-842A-42EB-8CDB-31CC24E50E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01632468-842A-42EB-8CDB-31CC24E50E44}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6CE81BB5-2537-4E02-BF6E-6DD4F248A7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CE81BB5-2537-4E02-BF6E-6DD4F248A7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CE81BB5-2537-4E02-BF6E-6DD4F248A7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,8 +25,19 @@ Global
 		{BBF1973F-289C-418B-B5E1-2251F77A4BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBF1973F-289C-418B-B5E1-2251F77A4BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBF1973F-289C-418B-B5E1-2251F77A4BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4464574-473B-41B3-A86B-7A7B5550AE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4464574-473B-41B3-A86B-7A7B5550AE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4464574-473B-41B3-A86B-7A7B5550AE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4464574-473B-41B3-A86B-7A7B5550AE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D7AA1AC-B358-4906-A36F-9007831CB7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7AA1AC-B358-4906-A36F-9007831CB7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7AA1AC-B358-4906-A36F-9007831CB7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7AA1AC-B358-4906-A36F-9007831CB7C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2A025AE-FB19-4873-AAE8-51F30C775C03}
 	EndGlobalSection
 EndGlobal
